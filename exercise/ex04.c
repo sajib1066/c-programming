@@ -3,7 +3,7 @@
 Problem:
 Print all "Narcissus Numbers". The so-called "Narcissus Number"
 refers to a three-digit number whose sum of each digital cube is equal to
-that number. For example, 153=13+53+33，so 153 is a "Narcissus Number".
+that number. For example, 153=1^3+5^3+3^3，so 153 is a "Narcissus Number".
 */
 
 #include<stdio.h>

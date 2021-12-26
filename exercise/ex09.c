@@ -7,19 +7,19 @@ How many a will be added can be determined by input (n).
 */
 
 #include<stdio.h>
+#include <limits.h>
 
 int main() {
-    int a, n;
-    long s = 0;
+    unsigned long long n, a, s = 0;
     printf("Enter a and n: ");
-    scanf("%d %d", &a, &n);
-    int perm_a = a;  // store a permanently
+    scanf("%llu %llu", &a, &n);
+    unsigned long long perm_a = a;  // store a permanently
     printf("Sum of ");
     for (int i=0; i<n; i++) {
+        printf("%llu %s", a, (i==n-1)?"":"+ ");
         s += a;
         a = (a * 10) + perm_a;
-        printf("%d %s", a, (i==n-1)?"":"+ ");
     }
-    printf("is %ld\n", s);
+    printf("is %llu\n", s);
     return 0;
 }

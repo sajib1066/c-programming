@@ -7,7 +7,6 @@ How many a will be added can be determined by input (n).
 */
 
 #include<stdio.h>
-#include <limits.h>
 
 int main() {
     unsigned long long n, a, s = 0;

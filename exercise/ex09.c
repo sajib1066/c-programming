@@ -17,7 +17,7 @@ int main() {
     printf("Sum of ");
     for (int i=0; i<n; i++) {
         s += a;
-        a = a  * 10 + perm_a;
+        a = (a * 10) + perm_a;
         printf("%d %s", a, (i==n-1)?"":"+ ");
     }
     printf("is %ld\n", s);

@@ -7,7 +7,8 @@
 #include<stdio.h>
 
 int main() {
-    int n[10], min, max, avg, sum = 0;
+    int n[10], min, max, sum = 0;
+    float avg;
     for (int i = 0; i < 10; i++) {
         printf("Enter number %d: ", i+1);
         scanf("%d", &n[i]);
@@ -23,9 +24,9 @@ int main() {
         }
         sum += n[i];
     }
-    avg = sum / 10;
+    avg = sum / 10.0;
     printf("Minimum: %d\n", min);
     printf("Maximum: %d\n", max);
-    printf("Average: %d\n", avg);
+    printf("Average: %f\n", avg);
     return 0;
 }

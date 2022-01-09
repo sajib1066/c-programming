@@ -9,10 +9,12 @@
 #include<stdio.h>
 
 int main() {
-    int height = 100;
-    for(int i = 1; i <= 10; i++) {
-        height = height / 2;
-        printf("%d\n", height);
+    float height = 100, hn = height / 2;
+    for(int i = 2; i <= 10; i++) {
+        height = height + 2 * hn;
+        hn = hn / 2;
     }
+    printf("The total of road is %f\n", height);
+    printf("The tenth is %f meters\n", hn);
     return 0;
 }

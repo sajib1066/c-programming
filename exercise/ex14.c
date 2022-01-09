@@ -1,8 +1,10 @@
 // Author: Md Sajib Hossain
 /*
     Problem:
-    Find the sum of x+x2/2+x3/3+…+x10/10,
+    Find the sum of x+x^2/2+x^3/3+…+x^10/10,
     x is an integer which can be obtained by input.
+
+    run by: gcc -o a ex14.c -lm
 */
 
 #include<stdio.h>

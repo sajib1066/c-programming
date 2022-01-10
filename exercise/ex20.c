@@ -7,7 +7,7 @@
 
 #include<stdio.h>
 
-void get_prime(int m) {
+void get_prime_number(int m) {
     // Get the prime numbers less than m
     int i, j, *prime;
     for (i = 2; i < m; i++) {
@@ -28,7 +28,7 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &m);
     printf("Prime numbers less than %d are: ", m);
-    get_prime(m);
+    get_prime_number(m);
     printf("\n");
     return 0;
 }

@@ -19,12 +19,12 @@ int main() {
     h = (dx-x0);
 
     /* Euler's Method */
-    printf("\nx0\ty0\tslope\tyn\n");
-    printf("------------------------------\n");
+    printf("\nx0\ty(Euler)\n");
+    printf("-------------------\n");
     for(i=0; i < n; i++) {
         slope = f(x0, y0);
         yn = y0 + h * slope;
-        printf("%.5g\t%.5g\t%0.5g\t%.5g\n",x0,y0,slope,yn);
+        printf("%.5g\t%.5g\n",x0,y0);
         y0 = yn;
         x0 = x0+h;
     }
